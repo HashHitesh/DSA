@@ -1,0 +1,5 @@
+The program Search.c generates the required test cases (18 lists of varying
+sizes together with corresponding key values to look for) and would make
+function calls to both the functions linearSearch() and binarySearch() (the
+functions to be implemented) and would compute runnning time for each of
+those test cases, for both the functions.
