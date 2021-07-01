@@ -1,0 +1,25 @@
+1. Implement subroutines that deploys the basic operations (prototype given below) of
+a queue. You are provided with a program queue.c that tabulates the average running
+time per operation (enqueue/dequeue) in a file queueTime.txt for each of those test
+cases provided with. You may assume the queue only to deal with positive integers.
+The dynamically allotted array queue[] refers to the memory allotted for the abstract
+data type queue along with the corresponding index variables front and rear, already
+being defined and initialized to 0. The size of the array is in variable queue_size. You
+may use the same in the implementations of the functions below.
+Int size() //returns the total number of elements in the queue
+int isQueueEmpty() //returns 1 of the queue is empty and 0 otherwise
+int isQueueFull() //returns 1 if the queue is full and 0 otherwise
+enQueue(x) //enqueues the value x to the rear end of the queue, returns -1 if in case the
+queue is full
+deQueue() //dequeues the value x from the front end of the queue, returns -1 if in case
+the queue is empty
+2. Write a menu driven program (in C or C++) which provides the user with 3 options,
+EnQueue, DeQueue, and Exit, maintaining a Queue in the background. Obviously, once
+the user opts to enqueue, should further be prompted for the value to be enqueued. In
+addition, you are supposed to implement the queue using two stacks, say stack1[] and
+stack2[], exploiting the fact that once we reverse a list (using a stack) twice, we do have
+the elements in the original order as it is. You should implement the pseudocode given
+below. Here stack2[] holds the values in the queue with the rearmost at the top, and we
+use stack1[] as a buffer to perform the required double-reversal. Further, stack1[] and
+stack2[] are of the same size. You have to implement the necessary supplementary
+functions, further, deal with the corner cases too.
