@@ -1,0 +1,16 @@
+1. Write a program (in C, C++, or java) that would implement two functions quick sort
+and merge sort and enumerate their running times for those test cases in the file
+SearchTestcase.txt. Your program should generate two files QuickSortTime.txt
+MergeSortTime.txt further, plot and compare the same.
+For each of those test cases, you could dynamically allocate memory for the array
+variable depending on test case size. For further details, refer Lab_01. There are 18
+test cases in the file. Each line corresponds to a test case where the first entry is the
+number of values in the list to sort and the elements follows.
+Additionally, you are also provided with a testCaseSize.txt. This text file contains 18
+entries, where the i th entry is the size of the array corresponding to the ith test case.
+
+2. Write a program to implement merge sort using linked lists (you should use the
+same set of input test cases). We have learned a procedure to merge two sorted lists
+into one (Tutorial 6). Your function mergeSort() should take a head pointer of a linked
+list as input, call a function split(), that would split the list into two and would return a
+head pointer to the second list, recursively sort both and then merge.
