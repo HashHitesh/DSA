@@ -1,0 +1,13 @@
+Write a menu driven program (in C,C++, or java) which provides the user with 3
+options, EnQueue, DeQueue, and Exit, maintaining a Queue in the background.
+Obviously, once the user opts to enqueue, should further be prompted for the value to
+be enqueued. In addition, you are supposed to implement the queue using two stacks,
+say stack1 and stack2, exploiting the fact that once we reverse a list (using a stack)
+twice, we do have the elements in the original order as it is. Further, both your stacks
+should be implemented using Linked lists (use the implementation from previous lab).
+Here stack2 holds the values in the queue with the rearmost at the top, and we use
+stack1 as a buffer to perform the required double-reversal.
+Further, top1 and top2 are the pointers pointing to the topmost elements in both the
+stacks respectively. You have to implement the necessary supplementary functions,
+further, deal with the corner cases too.
+You may refer Lab_03 (b) and port the array based implementation (almost) as it is.
