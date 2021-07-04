@@ -1,0 +1,11 @@
+Write a program that implements subroutines that deploys the basic operations of a
+binary search tree (BST). The program should have 5 functions createNode(),
+insertNode(), searchNode(), deleteNode(), and displayBST(). The prototype and other
+details for each of those functions are encoded as comments within the “tentative”
+(hasn’t tested for bugs) wrapper program provided with. The program listWrapper.c is
+an edited version of the one in Lab-05. You may start with the wrapper program as such
+and modify if required.
+You have been provided with the file testCaseForBST.txt from which your program
+reads the input. Before termination, the program makes a call to the function
+diplayBST() which prints the elements (the whole student record) sorted in descending
+order of roll numbers.
