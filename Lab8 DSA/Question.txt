@@ -1,0 +1,18 @@
+Given an arithmetic expression in postfix form, write a program to implement the expression
+tree for the same (recall that expression tree is a binary tree whose root is the operator and left
+and right children are roots of expression trees of respective subexpressions, assuming binary
+operators). Your program may read a postfix expression as a string where the operands are
+symbols A to Z and operators are one among +, −, ∗, /, andˆ.
+function ConstructExpnTree(S) //Assuming expression to be on a stack S with the
+last symbol on top and the first at bottom, returns root of tree
+if S.empty() then
+return Null
+end if
+x ← S.pop()
+t ← Create(x)
+if x is operator then
+t.right ←ConstructExpnTree(S)
+t.lef t ←ConstructExpnTree(S)
+end if
+return t
+end function
